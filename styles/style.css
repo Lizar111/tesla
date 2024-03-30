@@ -93,7 +93,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 160px;
+    width: 140px;
+    padding: 20px;
     height: 72px;
     text-align: center;
 }
@@ -101,7 +102,7 @@ body {
 .cta-container {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .btn {
@@ -159,10 +160,14 @@ body {
 
 h2 {
     margin: 0;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 p {
     margin: 0;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .chat {
@@ -218,3 +223,14 @@ p {
 .section-description {
     margin-top: 20px;
 }
+
+.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+    
